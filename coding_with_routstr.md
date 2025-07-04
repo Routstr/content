@@ -7,7 +7,17 @@ In this post, I'll guide you through the simple processing of setting up your co
 ## Coding in VSCode with Roo Code
 Before you open VSCode, create a cashu token worth 5k sats (recommended) and have it ready. Here is how you can get started: 
 1. Install [Roo Code](https://roocode.com/) from the VSCode Extensions Marketplace. 
-2. 
+2. Choose OpenRouter as your API Provider (Routstr uses the same model names). 
+3. For now, in the API Key field, just enter some random characters. 
+![screenshot](https://raw.githubusercontent.com/Routstr/content/refs/heads/main/imgs/screenshot_1.jpg?token=GHSAT0AAAAAADGX6HASNSPOKU2RHB6FX3EI2DH4BLA)
+4. Once you're inside, click on the **default** mode and click **Edit**. 
+5. Enable **custom base URL** and enter `https://api.routstr.com` in there. 
+6. Now in the **API Key̋** field enter the Cashu token you created. 
+
+**That's it! You can start coding!**
+
+If you don't know how to create a Cashu token, check this out: 
+
 ## No Emails, No Sign-ups, Just Cashu & Lightning
 You can use any of the top LLMs via Routstr by inputting https://api.routstr.com/ and an API Key into Roo Code or Goose. Similar to using it via OpenRouter minus the need to sign up using email or having to top up using Fiat or the Coinbase chain. Here are the steps in more details: 
 (Skip to step 4 if you already have a cashu wallet)
@@ -16,6 +26,9 @@ You can use any of the top LLMs via Routstr by inputting https://api.routstr.com
 3. Create a cashu token (at least 5k sats, but 10 sats is also fine if you want to use 8b models)
 4. Voila! That's it. Your cashu token is your API key. 
 You just need an API key to plug into your AI clients. To get this API key, all you need to do is to generate a Cashu token using one of the Cashu wallets. If you don't have a Cashu wallet yet, install one, and receive Bitcoin via Lightning. I'd recommend cashu.me and the minibits mint. The amount depends on the 
+
+
+# Archive
 
 ## Introducing Goose: Your On-Machine AI Agent
 
@@ -54,20 +67,6 @@ To use Routstr, you'll need either an API key from our chat application or a Cas
 ### Step 2: Configure Routstr in Your VSCode Extension
 
 Once you have your API key or Cashu token, you'll add it to your VSCode extension's configuration.
-
-#### For Code GPT (or similar extensions supporting OpenAI-compatible APIs):
-
-Code GPT and many other AI coding extensions offer an option to use OpenAI-compatible APIs. This is where Routstr comes in.
-
-1.  **Open VSCode Settings:** Go to `File > Preferences > Settings` (or `Code > Preferences > Settings` on macOS).
-2.  **Search for Code GPT settings:** Type "Code GPT" in the search bar.
-3.  **Select "OpenAI Compatible" as Provider:** Look for the "Provider" setting and choose "OpenAI Compatible" from the dropdown.
-
-    *Screenshot Placeholder: Code GPT Settings - Provider Selection*
-
-4.  **Enter your Routstr API key:** Find the setting for "API Key" or "Custom API Key" and paste your Routstr API key here.
-
-    *Screenshot Placeholder: Code GPT Settings - API Key Entry*
 
 #### For Roo Code (or extensions supporting OpenRouter/Custom Providers):
 
