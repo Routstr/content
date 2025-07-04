@@ -9,7 +9,7 @@ Before you open VSCode, create a cashu token worth 5k sats (recommended) and hav
 1. Install [Roo Code](https://roocode.com/) from the VSCode Extensions Marketplace. 
 2. Choose OpenRouter as your API Provider (Routstr uses the same model names). 
 3. For now, in the API Key field, just enter some random characters. 
-![screenshot](https://raw.githubusercontent.com/Routstr/content/refs/heads/main/imgs/screenshot_1.jpg?token=GHSAT0AAAAAADGX6HASNSPOKU2RHB6FX3EI2DH4BLA)
+![screenshot](https://github.com/Routstr/content/blob/main/imgs/screenshot_1.jpg?raw=true)
 4. Once you're inside, click on the **default** mode and click **Edit**. 
 5. Enable **custom base URL** and enter `https://api.routstr.com` in there. 
 6. Now in the **API Key̋** field enter the Cashu token you created. 
