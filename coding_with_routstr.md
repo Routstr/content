@@ -48,6 +48,6 @@ If you don't want to use the chat app and just want a way to topup your current 
 <TOPUP IMAGE>
 
 If you face any issues while trying any of these things, please tag us on Nostr. 
-Routstr: npub130mznv74rxs032peqym6g3wqavh472623mt3z5w73xq9r6qqdufs7ql29s
-Redshift: npub1ftt05tgku25m2akgvw6v7aqy5ux5mseqcrzy05g26ml43xf74nyqsredsh
-Shroominic: npub18gr2m5cflkzpn6jdfer4a8qdlavsn334m9mfhurjsge08grg82zq6hu9su
+1. Routstr: npub130mznv74rxs032peqym6g3wqavh472623mt3z5w73xq9r6qqdufs7ql29s
+2. Redshift: npub1ftt05tgku25m2akgvw6v7aqy5ux5mseqcrzy05g26ml43xf74nyqsredsh
+3. Shroominic: npub18gr2m5cflkzpn6jdfer4a8qdlavsn334m9mfhurjsge08grg82zq6hu9su
