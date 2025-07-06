@@ -5,16 +5,26 @@ If using Cursor or Claude Code while billing it to your credit card is the gold 
 In this post, I'll guide you through the simple processing of setting up your coding enviroment with VSCode (+Roo Code), a terminal (+Goose) and Bitcoin with the help of Routstr.  
 
 ## Coding in VSCode with Roo Code
-Before you open VSCode, create a cashu token worth 5k sats (recommended) and have it ready. Here is how you can get started: 
+Before you open VSCode, create a cashu token worth 1.5k to 5k sats (recommended for top models) and have it ready(if you don't know how, checkout the section at the end of this article). Here is how you can get started: 
 1. Install [Roo Code](https://roocode.com/) from the VSCode Extensions Marketplace. 
 2. Choose OpenRouter as your API Provider (Routstr uses the same model names). 
 3. For now, in the API Key field, just enter some random characters. 
 ![screenshot](https://github.com/Routstr/content/blob/main/imgs/screenshot_1.jpg?raw=true)
 4. Once you're inside, click on the **default** mode and click **Edit**. 
 5. Enable **custom base URL** and enter `https://api.routstr.com` in there. 
-6. Now in the **API Key̋** field enter the Cashu token you created. 
+6. Now in the **API Key̋** field enter the Cashu token you created. ![screenshot](https://github.com/Routstr/content/blob/main/imgs/screenshot_2.jpg?raw=true)
 
 **That's it! You can start coding!**
+
+## Using Goose with Routstr
+Hope you have a cashu token (check out the next section if not) and proceed:
+1. Download Goose for your device from [here](https://block.github.io/goose/docs/getting-started/installation). 
+2. It's easier on Goose. Choose **OpenAI Compatible** as the provider. 
+3. Enter `https://api.routstr.com` as the base URL. 
+4. Enter your cashu token as the API key. 
+5. Choose a model as it automatically fetches from the API. 
+
+**That's it! You can now create Freedom Agents!**
 
 If you don't know how to create a Cashu token, check this out: 
 
@@ -25,85 +35,19 @@ You can use any of the top LLMs via Routstr by inputting https://api.routstr.com
 2. Deposit some sats using Bitcoin Lightning (at least 5k sats for top models)
 3. Create a cashu token (at least 5k sats, but 10 sats is also fine if you want to use 8b models)
 4. Voila! That's it. Your cashu token is your API key. 
-You just need an API key to plug into your AI clients. To get this API key, all you need to do is to generate a Cashu token using one of the Cashu wallets. If you don't have a Cashu wallet yet, install one, and receive Bitcoin via Lightning. I'd recommend cashu.me and the minibits mint. The amount depends on the 
+Lastly, here's how you can top up your Cashu token and also manage your API Keys in a more organized manner.
 
+## Topup and Key Management
+I've been using Roo Code and Goose via Routstr for a while now. The best way to keep track of all the cashu tokens and api keys has been the chat app we have [here](https://chat.routstr.com). Here's how: 
+1. Login into the chat app (chat.routstr.com) using your Nostr extension or create a new nsec just for this. 
+2. Deposit some sats using Lightning or Cashu into the NIP60 wallet we have. (if you already have a NIP60 wallet attached to your Nostr pubkey, it should show up)
+3. Go to the API keys section and create API keys that are encrypted and synced to Nostr relays using NIP44. 
+4. Be sure to backup your nsec if you just created it as your wallet balance and api keys are attached to that private key.
 
-# Archive
+If you don't want to use the chat app and just want a way to topup your current Cashu token to avoid creating one every now and then, you can use our topup interface [here](https://routstr.com/topup).
+<TOPUP IMAGE>
 
-## Introducing Goose: Your On-Machine AI Agent
-
-While this article focuses on VSCode extensions, it's important to introduce **Goose**. Goose is a local, extensible, open-source AI agent designed to automate complex engineering tasks from start to finish. It's more than just code suggestions; Goose can build entire projects from scratch, write and execute code, debug failures, orchestrate workflows, and interact with external APIs — autonomously.
-
-Goose works with any LLM and supports multi-model configuration to optimize performance and cost. It seamlessly integrates with MCP servers and is available as both a desktop app and a CLI. Whether you're prototyping an idea, refining existing code, or managing intricate engineering pipelines, Goose adapts to your workflow and executes tasks with precision. You can configure Goose to use Routstr as its LLM provider, making it an incredibly powerful tool for developers who want to move faster and focus on innovation.
-
-### What you'll need:
-
-*   VSCode installed
-*   Code GPT or Roo Code VSCode extension
-*   A Routstr account or a Cashu-compatible wallet
-*   (Optional, for advanced automation) Codename Goose installed and configured.
-
-## Getting Started with Routstr in VSCode
-
-Integrating Routstr with your chosen VSCode extension is straightforward. The key is to obtain your Routstr API key or a Cashu token and configure it within the extension.
-
-### Step 1: Obtain your Routstr API Key or Cashu Token
-
-To use Routstr, you'll need either an API key from our chat application or a Cashu token generated from any Cashu-compatible wallet.
-
-*   **Option A: Through the Routstr Chat App**
-    *   Log in to your Routstr chat application.
-    *   Navigate to the API key section (exact location may vary).
-    *   Generate and copy your API key.
-
-    *Screenshot Placeholder: Routstr Chat App - API Key Generation*
-
-*   **Option B: Using a Cashu Wallet**
-    *   If you prefer using Cashu, generate a Cashu token from your preferred Cashu wallet.
-    *   Ensure the token is valid and has sufficient balance for your coding needs.
-
-    *Screenshot Placeholder: Cashu Wallet - Token Generation*
-
-### Step 2: Configure Routstr in Your VSCode Extension
-
-Once you have your API key or Cashu token, you'll add it to your VSCode extension's configuration.
-
-#### For Roo Code (or extensions supporting OpenRouter/Custom Providers):
-
-Roo Code often has direct support for OpenRouter, which closely aligns with Routstr's functionality.
-
-1.  **Open Roo Code Settings:** Access Roo Code settings through the VSCode settings or its dedicated panel.
-2.  **Select "OpenRouter" or "Custom" as Provider:** Choose the appropriate provider option.
-
-    *Screenshot Placeholder: Roo Code Settings - Provider Selection*
-
-3.  **Enter your Routstr Cashu Token or API Key:** Depending on the extension's implementation, you'll either paste your Cashu token or your Routstr API key.
-
-    *Screenshot Placeholder: Roo Code Settings - Token/API Key Entry*
-
-### Step 3: Start Coding with AI!
-
-With Routstr configured, you can now start using the AI capabilities of your VSCode extension. Try generating code, asking for explanations, or refactoring existing code.
-
-*Screenshot Placeholder: VSCode Editor with AI code generation/completion in action*
-
-## Topping Up Your Routstr Balance
-
-To ensure uninterrupted AI assistance, you'll need to top up your Routstr balance periodically.
-
-*   **Option A: Through the Routstr Chat App**
-    *   Log in to your Routstr chat application.
-    *   Navigate to the "Top Up" or "Billing" section.
-    *   Follow the instructions to add funds.
-
-    *Screenshot Placeholder: Routstr Chat App - Top Up Page*
-
-*   **Option B: Via the Routstr Top-Up Page**
-    *   Visit the dedicated Routstr top-up page directly in your web browser.
-    *   Enter the necessary details to complete your top-up.
-
-    *Screenshot Placeholder: Routstr Top-Up Web Page*
-
-## Conclusion
-
-Integrating Routstr with VSCode extensions like Code GPT and Roo Code transforms your coding workflow by bringing powerful AI capabilities directly to your fingertips. This guide should help you get started on your journey towards more efficient and intelligent development. And for those looking for even deeper automation, remember that Codename Goose can seamlessly integrate with Routstr to tackle complex engineering tasks. Happy coding!
+If you face any issues while trying any of these things, please tag us on Nostr. 
+Routstr: npub130mznv74rxs032peqym6g3wqavh472623mt3z5w73xq9r6qqdufs7ql29s
+Redshift: npub1ftt05tgku25m2akgvw6v7aqy5ux5mseqcrzy05g26ml43xf74nyqsredsh
+Shroominic: npub18gr2m5cflkzpn6jdfer4a8qdlavsn334m9mfhurjsge08grg82zq6hu9su
