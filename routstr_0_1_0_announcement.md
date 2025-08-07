@@ -47,7 +47,7 @@ None of the chat app, the node or any other software we build rely on a centrali
 There are a few ways you can help us. 
 
 ### Spread the word!
-We need more Routstr nodes. And more Routstr users that our nodes can serve. 
+We need more Routstr nodes. And more Routstr users that our nodes can serve. Help us reach them both. 
 
 ### Run a node and give us feedback
 Consider running a node by simply cloning our Routstr Core repo and setting up Ngrok or by setting up a subdomain. 
