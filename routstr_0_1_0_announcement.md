@@ -31,14 +31,14 @@ OpenRouter exists, doesn’t it? Yes, but are we gonna rely on another centraliz
 
 Routstr is important for two main reasons: 
 1. **Permissionless Listing:** Routstr allows anyone who has GPU compute to start a Routstr node and start serving AI inference to anyone who needs it. 
-2. **Permissionless Access:** It also enables anyone out there without an email or a known IP address to pay with Bitcoin and access AI. 
+2. **Permissionless Access:** Anyone can access AI using Routstr and Bitcoin Lightning. No email sign-up, no KYC, no whitelisted IP address brackets. 
 
 ## Leveraging Nostr
 ### Discovery
-Routstr leverages the permissionlessness nature of Nostr to help anyone with access to AI to serve anyone that needs it. We do this by broadcasting a Nostr event to various Nostr relays which can then be fetched by any client (like our chat app) to discover nodes offering AI inference at various prices. 
+Routstr leverages the permissionlessness nature of Nostr to help anyone with access to AI to serve anyone that needs it. We do this by broadcasting a Nostr event to various Nostr relays which can then be fetched by any client (like our chat app) to discover nodes offering AI inference at various prices (sats/million tokens). 
 
 ### Gossiping
-Various Routstr clients that use pseudonymous Routstr nodes for AI inference can gossip on the Nostr network to ensure that Routstr nodes don’t just steal from them. They can report mispricing, serving lower quality models as higher quality ones, or just not returning a response for a Cashu token. This is in contrast with the anonymity of Bitcoin nodes because the truth is derived from a chain of blocks, but Routstr must operate on some pseudonymous trust for it to work. 
+Various Routstr clients that use pseudonymous Routstr nodes for AI inference can gossip on the Nostr network to ensure that Routstr nodes don’t misbehave. Users can report mispricing, serving lower quality models as higher quality ones, or just not responding despite accepting a Cashu token. This is in contrast with the anonymity of Bitcoin nodes where the truth is derived from a chain of blocks, but Routstr must operate on _some_ pseudonymous trust to make it work. 
 
 ### Sovereignty
 None of the chat app, the node or any other software we build rely on a centralized server to operate. They all rely on Nostr relays for application state storage (nip-44), Cashu balance storage (nip-60) and for relay/mint selection. There is no way Routstr team or anyone can rug any user as users have full sovereignty. 
@@ -55,6 +55,6 @@ Consider running a node by simply cloning our Routstr Core repo and setting up N
 ### Contribute to our code
 If you are dev, we would highly appreciate your code contributions. Bonus points if you use Routstr to improve Routstr :). 
 
-Built with Love! 
+_Built with Love!_ 
 
-Routstr, A Freedom AI Tech Protocol
+_Routstr, A Freedom AI Tech Protocol_
